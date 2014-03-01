@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='assets/css/style.css'>
+  <script src='assets/js/jquery-1.8.3.min.js'></script>
+  <script type="text/javascript" src="//use.typekit.net/ytt3zzz.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <title>Atlantis Capital Management</title>
+
+  <script>
+  $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+	    //$(".nav-panel").slideToggle("fast");
+	    var target = this.hash,
+	    $target = $(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top - 100
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+
+<header>
+  <div class='container'>
+    <a class='logo floatLeft' href='index.html'></a>
+    <nav class='primary-nav floatRight'>
+      <ul>
+        <li class='current'>
+          <a class='current' href='philosophy.html'>Philosophy</a>
+        </li>
+        <li>
+          <a href='services.html'>Services</a>
+        </li>
+        <li>
+          <a href='model.html'>Model</a>
+        </li>
+        <li>
+          <a href='team.html'>Team</a>
+        </li>
+        <li>
+          <a href='contact.html'>Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class='clear'></div>
+  </div>
+</header>
+
+<div class='hero hero-philosophy'>
+  <div class='container'>
+    <p class='quote'>"Ultimate excellence lies not in winning every battle, but in defeating the enemy without ever fighting"</p>
+    <div class='quote-author'>Sun Tzu</div>
+  </div>
+</div>
+<div class='container-narrow'>
+  <p class='lead'>The Atlantis philosophy of doing business is based on three key concepts: trust, long-term vision and innovation.</p>
+  <h2>Trust</h2>
+  <p>Atlantis was established in 2010 by the Vaglietti Family as a platform to invest and manage diverse family interests using an investment methodology that private banks were unable to provide. The Vaglietti Family co-invests in many of the investments and projects Atlantis proposes to clients to ensure that no conflicts of interest arise. Atlantis will also never propose an investment to clients that it does not believe suits the investment needs, risk tolerance or vision of that client.</p>
+  <h2>Long-term Vision</h2>
+  <p>This is another key concept upon which Atlantis is founded. Prior to starting Atlantis, Roberto Vaglietti was experiencing increasing frustration as an investor at the short- term view of other investment managers and wanted to create a unique concept that would ensure a ‘bottom-up’ comprehensive approach was employed in constructing investments. Coming from an international background ensures that a global point of view is considered prior to seeking opportunities worth investing in. At Atlantis the overarching belief is that successful investing is done with a view to the long-term and this ensures that coupled with trust, solid relationships with clients are built that will ensure wealth preservation for future generations.</p>
+  <h2>Innovation</h2>
+  <p>Coming from a background in entrepreneurship from Babson College, Paolo and Stefano Vaglietti are well-versed in recognizing and capitalizing upon upcoming trends and globally-disruptive innovations ensuring that the clients are able to keep abreast of developments in the world and able tailor their investment approach accordingly and efficiently.</p>
+</div>
+<footer class='site-footer'>
+  <div class='container'>
+    <div class='copyright'>© 2014 Atlantis Capital Management Limited. Registered in England & Wales with registered number 07370778. Authorised and Regulated by the Financial Conduct Authority with registered number 534844.</div>
+  </div>
+</footer>
+</body>
+</html>

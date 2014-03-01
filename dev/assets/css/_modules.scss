@@ -1,0 +1,248 @@
+// ================================================================================================
+// Modules
+// ================================================================================================
+
+// Navigation
+// ================================================================================================
+
+header {
+	background: white;
+	width: 100%;
+	z-index: 9999;
+	padding: 20px 0 20px 0;
+
+	@include clearfix;
+}
+
+.primary-nav {
+
+	padding-top: 18px;
+	text-align: right;
+	z-index: 9999;
+
+	color: #DBD7CA;
+
+	@include h-nav;
+
+	li {
+		@include respond-to ($ipad-portrait) {
+			width: 100%;
+		}
+
+		a {
+			color: $colour-primary;
+			@include transition;
+			&:hover {
+				color: darken($colour-primary, 30%);
+			}
+		}
+	}
+}
+
+.primary-nav-mobile {
+	display: none;
+	visibility: hidden; // are both needed?
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	width: 25px;
+	z-index: 9999;
+
+	.line {
+		width: 100%;
+		display: block;
+		margin-bottom: 4px;
+		background-color: black;
+		height: 1px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	@include respond-to($ipad-portrait) {
+		display: block; 
+		visibility: visible; 
+	}
+}
+
+.number {
+	font-family: $secondary-font-family;
+	//border: 1px solid $colour-primary;
+	color: $colour-primary;
+	//padding: 20px;
+	font-size: 28px;
+	display: inline-block;
+	border-radius: 40px;
+}
+
+.photo-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -350px;
+	
+	max-width: 700px;
+	width: 100%;
+	
+	line-height: 1.5;
+
+	text-align: center;
+	color: white;
+
+	p {
+		margin-bottom: 40px;
+		font-family: $secondary-font-family;
+		font-weight: 100;
+		line-height: 1.5;
+		font-style: italic;
+		font-size: 36px;
+	}
+
+	.title {
+		margin-bottom: 30px;
+		color: white;
+	}
+
+	.inner {
+		border: 1px solid black;
+		padding: 35px;
+
+	}
+}
+
+.title {
+	color: $colour-primary;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+
+
+
+
+.copyright {
+	line-height: 1.5;
+}
+
+
+
+.logo {
+	@include bg-image;
+	display: block;
+	background-image: url(assets/images/general/logo-colour.png);
+	width: 180px;
+	height:52px;
+}
+
+
+.heading-lines {
+
+	position: relative;
+	border-top: 1px solid black;
+	display: block;
+	width: 600px;
+	margin: auto;
+
+	h1 {
+		position: relative;
+		background: #FFFAEC;
+		padding: 0 20px 0 20px;
+		display: inline-block;
+		top: -30px;
+	}
+
+}
+
+
+// Footer
+// ================================================================================================
+
+footer {
+	text-align: center;
+	padding: 60px 0 60px 0;
+	color: lighten(black, 70%);
+}
+
+
+// Hero
+// ================================================================================================
+
+.hero {
+	@include bg-image;
+	width: 100%;
+	padding: 150px 0 150px 0;
+	color: white;
+	text-align: center;
+
+	.title {
+		color: white;
+	}
+}
+
+.hero-philosophy {
+	background-image: url('../assets/images/hero-philosophy.jpg');
+}
+
+.hero-model {
+	background-image: url('../assets/images/hero-model.jpg');
+}
+
+.hero-team {
+	background-image: url('../assets/images/hero-team.jpg');
+}
+
+.hero-services {
+	background-image: url('../assets/images/hero-services.jpg');
+}
+
+.hero-contact {
+	padding: 0;
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+.quote {
+	font-family: $secondary-font-family;
+	font-size: 40px;
+	font-style: italic;	
+}
+
+.quote-author {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+.email {
+	padding: 20px;
+	font-weight: 100;
+	color: $colour-primary;
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.details {
+	color: $colour-primary;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.map {
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+

@@ -1,0 +1,103 @@
+@import "settings";
+@import "mixins";
+
+// SET UP YOUR FORMS IN THIS FILE
+
+// -----------------------------------------------------------
+
+
+label, select {
+	display: block;
+}
+
+label {
+	font-size: 16px !important;
+	line-height: 1;
+	margin: 0 0 $base-line-height 0;
+}
+
+
+.form-group {
+	margin-bottom: $base-line-height * 4;
+}
+
+input {
+	font-family: "europa";
+	&:focus {
+		outline: none;
+	}
+}
+
+
+textarea {
+	resize: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+
+
+select {
+
+	width: 100%;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+::-webkit-input-placeholder, {
+	color: black;
+}
+
+::-moz-placeholder {
+	color: black;
+}
+
+:-moz-placeholder {
+	color: black;
+}
+
+:-ms-input-placeholder {
+	color: black;
+}
+
+input[type="submit"] {
+
+}
+
+form {
+	border: 1px solid black;
+	padding: 60px;
+}
+input[type="text"], textarea {
+
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: normal;
+	box-shadow: none;
+	text-shadow: none;
+	padding: 18px 0 18px 0;
+	width: 100%;
+	float: left;
+	background: none;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 1px solid black;
+	color: black;
+	border-radius: 0;
+	font-family: $primary-font-family;
+	-webkit-appearance: none;
+
+	&:hover {
+		background-image: none !important;
+		box-shadow: none !important;
+	}
+}
+
+
+
+
+
