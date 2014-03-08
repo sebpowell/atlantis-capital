@@ -1,0 +1,94 @@
+// ================================================================================================
+// Buttons
+// ================================================================================================
+
+
+// Button Colours
+// ================================================================================================
+
+
+%btn {
+	@include btn;
+}
+
+.btn-primary {
+	color: $colour-accent;
+	font-size: 18px;
+	border: 1px solid $colour-accent;
+
+	padding: 12px 30px 12px 30px;
+	&:hover {
+		box-shadow: 0 0 3px rgba(0,0,0,0.3);
+		cursor: pointer;
+	}
+}
+
+.btn-white {
+	@extend %btn;
+
+	border-radius: 5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	padding: 15px 20px 15px 20px;
+	border: 2px solid white;
+	color: white;
+
+	&:hover {
+		color: $colour-primary;
+		border-color: $colour-primary;
+	}
+}
+
+.btn-secondary {
+	color: white;
+	width: 200px;
+	font-size: 14px;
+	background-color: $colour-primary;
+	padding: 15px 25px 15px 25px;
+	&:hover {
+		background-color: $colour-accent;
+		color: $colour-secondary;
+	}
+
+	a {
+		color: white !important;
+	}
+}
+
+// Button Sizes
+// ================================================================================================
+
+
+.btn-xs {
+	font-size: 12px;
+	padding: 10px 20px 10px 20px;
+}
+
+.btn-sm {
+	font-size: 14px;
+	padding: 12px 25px 12px 25px;
+	width: 100px;
+}
+
+.btn-md {
+	font-size: 18px;
+	padding: 12px 25px 12px 25px;
+}
+
+.btn-lg {
+	font-size: 24px;
+	padding: 6px 15px 5px 15px;
+}
+
+.btn-xl {
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+	margin-bottom: $base-line-height * 4;
+}

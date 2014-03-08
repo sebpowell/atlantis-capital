@@ -1,0 +1,76 @@
+// ================================================================================================
+// Helpers
+// ================================================================================================
+
+// Positioning Helpers
+// ================================================================================================
+
+
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  li {
+    display: inline;
+    margin: 0 60px 0 0;
+  }
+}
+
+.inline-block {
+	display: inline;
+}
+
+.center-block {
+	display: block;
+	margin: auto;
+}
+
+
+// Typography Helpers
+// ================================================================================================
+
+.uppercase {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+// Positioning Helpers
+// ================================================================================================
+
+.show {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+
